@@ -1,6 +1,6 @@
 // VARIABLES & PATHS
 
-let preprocessor = 'sass', // Preprocessor (sass, scss, less, styl)
+let preprocessor = 'scss', // Preprocessor (sass, scss, less)
     fileswatch   = 'html,htm,txt,json,md,woff2', // List of files extensions for watching & hard reload (comma separated)
     imageswatch  = 'jpg,jpeg,png,webp,svg', // List of images extensions for watching & compression (comma separated)
     baseDir      = 'app', // Base directory path without «/» at the end
@@ -11,7 +11,7 @@ let paths = {
 	scripts: {
 		src: [
 			// 'node_modules/jquery/dist/jquery.min.js', // npm vendor example (npm i --save-dev jquery)
-			baseDir + '/js/app.js' // app.js. Always at the end
+			baseDir + '/js/main.js' // app.js. Always at the end
 		],
 		dest: baseDir + '/js',
 	},
@@ -22,8 +22,8 @@ let paths = {
 	},
 
 	images: {
-		src:  baseDir + '/images/src/**/*',
-		dest: baseDir + '/images/dest',
+		src:  baseDir + '/img-src/**/*',
+		dest: baseDir + '/img',
 	},
 
 	deploy: {
@@ -33,8 +33,8 @@ let paths = {
 		exclude:     [ '**/Thumbs.db', '**/*.DS_Store' ], // Excluded files from deploy
 	},
 
-	cssOutputName: 'app.min.css',
-	jsOutputName:  'app.min.js',
+	cssOutputName: 'main.min.css',
+	jsOutputName:  'main.min.js',
 
 }
 
