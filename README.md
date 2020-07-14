@@ -7,4 +7,5 @@ To start a new project based on the BlankHTML do the following:
 	* `git remote set-url origin <Blank GitHub repository URL>`
 	* `git push -u origin master`
 	* `npm i` (NodeJS and npm must be installed)
+	* `gulp`
 4. Code ;)
