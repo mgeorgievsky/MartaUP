@@ -29,6 +29,14 @@ $roboto: Roboto, sans-serif; // Roboto Font Family
 
 // GENERAL DOCUMENT STYLES
 
+html {
+	box-sizing: border-box;
+}
+
+*, *:after, *:before {
+	box-sizing: inherit;
+}
+
 ::placeholder {
 	color: #666;
 }
@@ -42,6 +50,17 @@ input, textarea {
 	outline: none;
 	&:focus:required:invalid { border-color: red }
 	&:required:valid { border-color: green }
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: SteelBlue;
+	text-decoration: none; 
 }
 
 body {
