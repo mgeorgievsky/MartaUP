@@ -2,11 +2,82 @@
 
 // CUSTOM USER STYLES & IMPORTS
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 .header {
+
     background-image: url(../img/header-bg.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: top center;
     min-height: 793px;
+
+    &__top {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+.menu {
+
+    &__list {
+        min-width: 343px;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $textcolor-link-inverse;
+            opacity: 0.5;
+            transition: all .3s;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+}
+
+.header-btn {
+
+    min-width: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.login {
+
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $textcolor-link-inverse;
+
+}
+
+.sign-up {
+
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $textcolor-button;
+    background-color: #fff;
+    padding: 8px 43px;
+    border-radius: 20px;
+    transition: all .3s;
+
+    &:hover {
+        background-color: $accentcolor;
+    }
+
 }
 
 // https://www.youtube.com/watch?v=kLLx9BWqPJI&t=8155s

@@ -1,13 +1,20 @@
 // USER VARIABLES SECTION
 
-$accent: #FFCA00; // Accent Color
+
 $fontsize: 15px; // Body Font Size
+$lineheight: 24px; // Body Line Height
+$sourse-sans-pro: 'Source Sans Pro', sans-serif;
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+$accentcolor: #FFCA00; // Accent Color
 $textcolor: #202020; // Text Color
 $textcolor-light: #272727;
 $textcolor-button: #250F8A;
 $textcolor-inverse: #FFFFFF;
-$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
-$roboto: Roboto, sans-serif; // Roboto Font Family
+$textcolor-link: inherit;
+$textcolor-link-inverse: #FFFFFF;
+
+
 
 // IMPORT SECTION
 
@@ -45,7 +52,7 @@ html {
 }
 
 ::selection {
-	background-color: $accent;
+	background-color: $accentcolor;
 	color: #fff;
 }
 
@@ -62,16 +69,16 @@ ul {
 }
 
 a {
-	color: SteelBlue;
+	color: $textcolor-link;
 	text-decoration: none; 
 }
 
 body {
-	font-family: $roboto;
+	font-family: $sourse-sans-pro;
 	font-size: $fontsize;
 	min-width: 320px;
 	position: relative;
-	line-height: 1.65;
+	line-height: $lineheight;
 	overflow-x: hidden;
 	color: $textcolor;
 }
