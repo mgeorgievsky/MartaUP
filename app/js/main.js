@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
 		vertical: true,
 		verticalSwiping: true,
 		dots: true,
-		dotsClass: 'header-slider__dots'
+		dotsClass: 'header-slider__dots',
+		autoplay: 2000,
 	});
 
 });

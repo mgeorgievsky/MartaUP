@@ -46,7 +46,6 @@ const autoprefixer = require('gulp-autoprefixer');
 const imagemin     = require('gulp-imagemin');
 const newer        = require('gulp-newer');
 const del          = require('del');
-const normalize    = require('node-normalize-scss');
 
 function browsersync() {
 	browserSync.init({

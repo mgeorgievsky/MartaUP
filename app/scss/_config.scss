@@ -18,7 +18,7 @@ $textcolor-link-inverse: #FFFFFF;
 
 // IMPORT SECTION
 
-@import '../../node_modules/normalize.css/normalize.css';
+
 
 // FONTS LOAD SECTION
 
@@ -41,6 +41,8 @@ $textcolor-link-inverse: #FFFFFF;
 
 html {
 	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 *, *:after, *:before {
@@ -64,8 +66,7 @@ input, textarea {
 
 ul {
 	list-style: none;
-	padding: 0;
-	margin: 0;
+	
 }
 
 a {
