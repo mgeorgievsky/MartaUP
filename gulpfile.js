@@ -65,7 +65,9 @@ function scripts() {
 
 function styles() {
 	return src(paths.styles.src)
-	.pipe(scss())
+	.pipe(scss({
+		includePaths: require("scss-resets").includePaths
+	}))
 	.pipe(concat(paths.cssOutputName))
 	.pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
 	.pipe(cleancss( {level: { 1: { specialComments: 0 } },/* format: 'beautify' */ }))
