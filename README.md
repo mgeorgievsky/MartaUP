@@ -1,2 +1,8 @@
 # MartaUP
-Landing page HTML/CSS training project.
+Landing page training project.
+
+Used technologies:
+- HTML
+- SCSS
+- Slick slider (JQuery plugin)
+- Gulp
